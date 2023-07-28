@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NEW POST</title>
+    <link rel="stylesheet" href="./cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <style>
+
+        thead > .container, input, button {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 9px;
+            width: 100%;
+        }
+      
+        .menu > li {
+            float: left;
+            list-style: none;
+            padding: 16px;
+            border-top: 2px solid transparent;
+            position:relative
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .menu, ul {
+            font-size: 32px;
+        }
+
+        .menu li:hover {
+            border-color: yellow;
+        }
+
+        .submenu li {
+            display: block;
+            padding: 8px;
+            
+        }
+
+        .submenu {
+            display: none;
+            border: 1px solid transparent;
+            font-size: 20px;
+            left: 0;
+            width: 300px;
+            top: 100%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h1 {
+            padding: 30px;
+            justify-content: space-between;
+            text-align: center;
+            font-size: 40px;
+            
+        }
+
+        h3 {
+            margin-top: 80px;
+            padding: 7px;
+            text-align: center
+        }
+        body {
+            background-color: bisque;
+        }
+        table , td {
+            max-width: 100px;
+            text-align: center;  
+        }
+        .card {
+            height: 100%;
+        }
+
+        #color {
+            color:black;
+        }
+
+        .table{
+            max-width: 800%;
+            height: 100px;
+            margin-bottom: 33px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        ul, li a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h2, p {
+            padding: 30px;
+        }
+
+        article {
+            margin-top: 30px;
+            padding: 18px;
+        }
+
+        p, button {
+          
+            width: 100%;
+            padding: 18px;
+        }
+
+        .sobre {
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<thead>
+    <div class="container">
+        <h1>THE NEW POST</h1>
+        <form>
+            <input type="search" placeholder="Buscar conteúdo">
+            <button id="pesquisar" class="btn btn-primary"type="submit">Pesquisar</button>
+        </form>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                Esportes
+                <ul class="submenu">
+                    <li>
+                        <a id="color" href="#">Futebol</a>
+                    </li>
+                    <li>
+                        <a id="color"  href="#">Basquete</a>
+                    </li>
+                    <li>
+                        <a id="color"  href="#">Tênis</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Economia
+                <ul class="submenu">
+                    <li>
+                        <a id="color"  href="#">Dolar em crise</a>
+                    </li>
+                    <li>
+                        <a id="color"  href="#">Bitcoins</a>
+                    </li>
+                    <li>
+                        <a id="color"  href="#">Euro em alta</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Ciência
+                <ul class="submenu">
+                    <li>
+                        <a id="color"  href="#">Biologia Molecular</a>
+                    </li>
+                    <li>
+                        <a id="color"  href="#">Medicina Oriental</a>
+                    </li>
+                    <li>
+                        <a id="color"  href="#">Regeneração celular</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</thead>
+<body>
+    <h2>Artigos</h2>
+           
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 g-2">
+                    <article class="card">
+                        <header class="card-header">
+                            Planejamento 
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2017/03/30/14/49/web-design-2188728_1280.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Planejar & desenvolver</h4>
+                            <p class="card-text">
+                                O planejamento e desenvolvimento são processos essenciais para alcançar metas e melhorar sociedades. No planejamento, estabelecem-se objetivos, estratégias e recursos necessários. No desenvolvimento, aplicam-se ações para promover crescimento econômico, bem-estar social e ambiental. Ambos são fundamentais para moldar um futuro sustentável e próspero, alinhando aspirações com a realidade atual e garantindo um progresso equitativo e responsável.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em: <time>25/07/2023 ás 19:23</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-lg-4 g-2">
+                    <article class="card">
+                        <header class="card-header">
+                            Arte digital
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2023/06/14/22/15/huts-8064061_1280.jpg">
+                        <div  class="card-body">
+                            <h4 class="card-title">A Fotografia moderna </h4>
+                            <p class="card-text">
+                                A fotografia moderna revolucionou a forma como capturamos e compartilhamos imagens. Com o avanço das câmeras digitais e smartphones, tornou-se acessível a todos. Através da fotografia, expressamos ideias, emoções e contamos histórias. É uma linguagem universal que conecta pessoas e culturas. Dos retratos aos registros históricos, a fotografia moderna transcende o tempo, documentando momentos preciosos e transmitindo beleza e significado ao mundo. Seu impacto na arte, mídia e comunicação torna-a uma poderosa ferramenta de expressão e registro da nossa história contemporânea.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em: <time>25/07/2023 ás 19:23</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class=" col-sm-12 col-lg-4 g-2">
+                    <article class="card">
+                        <header class="card-header">
+                            Mundo
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2023/05/30/13/46/carnival-8028612_1280.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Cultura</h4>
+                            <p class="card-text">
+                                A cultura mundial é um mosaico diversificado de tradições, crenças, línguas, arte e costumes. Ela reflete a rica história da humanidade, incluindo influências das civilizações antigas, migrações, colonização e globalização. Com elementos únicos em cada região, as culturas globais coexistem e interagem, celebrando a música, dança, culinária e festivais distintos. A comunicação e tecnologia modernas têm facilitado a troca cultural, enriquecendo ainda mais a experiência humana em um mundo cada vez mais interconectado.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em: <time>25/07/2023 ás 19:23</time>
+                        </footer>
+                    </article>
+                </div>               
+               </div>
+           </div>
+        <section>
+        <article id="tabela">
+            <h3><strong>Avanço de preço</strong></h3>  
+            <p>Comparativo de preço com bases nas pesquisas realizadas a cada semestre do ano de lançamento</p> 
+            <table class="table table-info">
+                <caption>Fonte: Apple.br</caption>
+                <thead>
+                    <th>Nome do produto</th>
+                    <th>Preço original</th>
+                    <th>Preço atual</th>
+                    <th>Aumento de preço em reais</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Iphone 12 Pro</td>
+                        <td>8.000,00</td>
+                        <td>9.900,00</td>
+                        <td>1.900,00</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 13 Pro</td>
+                        <td>9.999,00</td>
+                        <td>11.900,00</td>
+                        <td>1.901,00</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 14 Pro Max</td>
+                        <td>10.499,00</td>
+                        <td>13.499,00</td>
+                        <td>3.000,00</td>
+                    </tr>
+                </tbody>  
+                <br/>
+            </table>     
+        </article>
+    </section>  
+    <br/>
+    <h3><strong><i>Natureza</i></strong></h3>  
+        <div class="container">
+            <div id="carousel-exemplo" class=" carousel carousel-slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img src="https://cdn.pixabay.com/photo/2023/04/23/22/02/bird-7946807_1280.jpg">
+                        <div class="carousel-caption">
+                            <h2>Pato na lagoa</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/16/18/21/flowers-8131239_1280.jpg">
+                        <div class="carousel-caption">
+                            <h2>Girassois</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="https://cdn.pixabay.com/photo/2023/06/29/22/04/barn-swallow-8097199_1280.jpg">
+                        <div class="carousel-caption">
+                            <h2>Andorinhas</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>    
+        </div>
+        <section>
+            <article>
+                <h5>
+                    <p>
+                        A natureza, sublime e vasta, é a essência primordial que abriga todos os seres vivos. Suas florestas exalam odores encantadores, enquanto os rios fluem harmoniosamente, perpetuando a vida. Montanhas majestosas desafiam os céus, e oceanos enigmáticos escondem tesouros submersos. A natureza nos presenteia com beleza inigualável, ensinando lições de humildade e resiliência. Contemplar o nascer do sol ou o brilho das estrelas desperta um profundo encantamento. Preservá-la é nossa responsabilidade, pois a harmonia entre homem e natureza é essencial para um futuro promissor.</i>
+                    </p>
+                </h5>
+            </article>
+        </section>
+
+        <div class="sobre">
+            <footer>
+                &copy; 2023 - Todos os direitos reservados 
+            </footer>
+    
+    
+    <script src="./cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
